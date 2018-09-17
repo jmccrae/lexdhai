@@ -52,7 +52,7 @@ section {
     flex-direction: column;
 }
 .card {
-    width: 30rem;
+    width: 20rem;
 }
 .card-img-top {
     width: 50%;
@@ -79,11 +79,36 @@ section {
 a {
     color: #1d5095;
 }
+.mycol {
+    max-width: 700px;
+}
+.mycolwide {
+    max-width: 900px;
+}
+.mycolnarrow {
+    max-width: 600px;
+}
+.time {
+    margin-right: 1em;
+        font-weight: bold;
+}
+.card {
+    margin: 1em;
+}
+.card img {
+    margin: 0 auto;
+}
+.organizers-row {
+    max-width:90em;
+}
+.card-text {
+    font-size: .8em;
+}
         </style>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
 
@@ -114,7 +139,7 @@ a {
         <div class="container-fluid p-0">
 
             <section class="p-3 p-lg-5 d-column" id="top">
-                <div class="col-7" style="margin-top:20rem;">
+                <div class="mycolwide" style="margin-top:20rem;">
                     <h1>Workshop on <span class="blue">eLexicography</span>: Between <span class="yellow">Digital Humanities</span> and <span class="yellow">Artificial Intelligence</span></h1>
                     <h5>6<sup>th</sup> December, Galway, Ireland</h5>
                     <h5>Co-located with <a href="https://eadh2018eadh.wordpress.com/">EADH 2018: "Data in Digital Humanities"</a></h5>
@@ -122,17 +147,17 @@ a {
             </section>
             <section class="p-3 p-lg-5 d-column" id="about">
                 <h1 class="pad-top-alittle">About the Workshop</h1>
-                <p class="mb-5 col-5">
+                <p class="mb-5 mycolnarrow">
 Lexicography is currently embracing rapid change as the traditional methods of publishing dictionaries are replaced by the ubiquity of lexical information on the Web. Furthermore, the application of computational techniques to the process of lexicography are revolutionizing how dictionaries can be constructed. In this context, the recently started ELEXIS project aims to develop a new infrastructure for electronic lexicography across Europe, that builds a virtuous cycle of lexicography where lexicographic resources are linked across languages, in order to build improved natural language processing tools, which can then aid in the construction of novel resources and retro-digitization of dictionaries, thus driving the cycle. The project is naturally multilingual covering 15 European countries and has a strong interest in driving lexicography for under-resourced and minoritized languages.
                 </p>
-                <p class="mb-5 col-5">
+                <p class="mb-5 mycolnarrow">
 The workshop has three main aims, firstly we will invite speakers from existing major lexicographic efforts to provide summaries of the work at the cutting edge of lexicography. We will invite speakers who are part of major dictionary efforts and have already approached Oxford English Dictionaries regarding this. Secondly, we will provide a tutorial and hands-on with the ELEXIS infrastructure to enable participants to become familiar with the technologies being developed in the project. Finally, we will make an open call for posters, which will provide an overview of new projects in the area of electronic lexicography.
                 </p>
 
             </section>
 
             <section class="p-3 p-lg-5 d-column" id="topics">
-                <div class="col-6">
+                <div class="mycol">
                     <h1 class="pad-top">Topics of Interest</h1>
                     <ul>
                         <li>Lexicography and Digital Humanities</li>
@@ -148,7 +173,7 @@ The workshop has three main aims, firstly we will invite speakers from existing 
                 
             </section>
             <section class="p-3 pl-lg-5 d-column" id="cfp">
-                <div class="col-6 pad-top">
+                <div class="mycol pad-top">
                     <h1>Call for Papers</h1>
                     <p>We welcome submissions of abstracts of up to 500 words that will be presented as posters at the workshop. Submissions should present methodologies, experiments, use cases, descriptions of ongoing or planned research projects and position papers on topics related to the topics of interest (given above). Furthermore we especially welcome papers describing interdisciplinary research combining research in lexicography, linguistics, computer science and digital humanities approaches.</p>
 
@@ -161,7 +186,7 @@ The workshop has three main aims, firstly we will invite speakers from existing 
                 </div>
             </section>
             <section class="p-3 p-lg-5 d-column" id="schedule">
-                <div class="col-6 pad-top">
+                <div class="mycol pad-top">
                     <h1>Workshop Schedule (provisional)</h1>
                     <div class="list-group">
                         <div class="list-group-item"><span class="time">2:00-2:30</span> Invited talk</div>
@@ -174,15 +199,16 @@ The workshop has three main aims, firstly we will invite speakers from existing 
                 </div>
             </section>
             <section class="p-3 p-lg-5 d-column d-flex" id="organizers">
+                <div class="row organizers-row">
                 <div class="card">
-                    <img class="card-img-top" src="http://john.mccr.ae/me.jpg"/>
+                    <img class="card-img-top" src="me.jpg"/>
                     <div class="card-body">
                         <h5 class="card-title">John P. McCrae - National University of Ireland Galway</h5>
                         <p class="card-text">John P. McCrae is a lecturer above-the-bar at the National University of Ireland, Galway in the school of information technology. His work has focussed on the application of linked data to language resources. In particular, he is the original developer of the lemon-OntoLex model, which has become a de-facto standard for representing lexicons on the Web. In addition, he is a board member of the Global WordNet Association. He has also organized many events including the Language Data and Knowledge Conferences (2017, 2019), the Linked Data in Linguistics Workshops (2013,14,15,16,18), Summer Datathons/Summer Schools on Linguistic Linked Open Data (2015,17) and 7 other workshops.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="https://pro.europeana.eu/thumbs/450x450c/zoho_images/1482250000003345011.png"/>
+                    <img class="card-img-top" src="1482250000003345011.png"/>
                     <div class="card-body">
                         <h5 class="card-title">Toma Tasovac - Belgrade Center for Digital Humanities</h5>
                         <p class="card-text">
@@ -192,7 +218,7 @@ Address: Belgrade Center for Digital Humanities, Belgrade, Serbia
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="https://pbs.twimg.com/profile_images/2524519960/6sewv5itxn6soj3cczhk_400x400.jpeg"/>
+                    <img class="card-img-top" src="6sewv5itxn6soj3cczhk_400x400.jpeg"/>
                     <div class="card-body">
                         <h5 class="card-title">Justin Tonra - National University of Ireland Galway</h5>
                         <p class="card-text">
@@ -200,16 +226,17 @@ Address: Belgrade Center for Digital Humanities, Belgrade, Serbia
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="http://www.termcoord.eu/wp-content/uploads/2017/09/Wissik_Tanja_optimized.png"/>
+                    <img class="card-img-top" src="Wissik_Tanja_optimized.png"/>
                     <div class="card-body">
                         <h5 class="card-title">Tanja Wissik - Austrian Centre for Digital Humanities</h5>
                         <p class="card-text">
                         Tanja Wissik is a senior researcher at the Austrian Centre for Digital Humanities (ACDH) of the Austrian Academy of Sciences and teaches information technologies for translators at the University of Graz. She graduated from the University of Graz in translation and interpretation studies. She holds a PhD from the University of Vienna in translation studies with a specialization in the field of terminology and corpus linguistics. She has been working in numerous national and international research projects related to language resources and language technologies first as a junior researcher at the Institute for Specialized Communication and Multilingualism of the European Academy Bolzano, and then as a researcher and lecturer at the University of Vienna. At the ACDH, she is involved in the following projects: ELEXIS, CLARIN-ERIC, DARIAH-EU, dariahTeach, CLARIAH-AT & DHA and in the creation of the Corpus of Austrian Parliamentary records. Furthermore she is also involved in the institute’s outreach and network activities, having organized several international and national conferences (e.g. LSP2013,TEI2016, DHA2016) and workshops (e.g. ACDH Tool Galleries). </p>
                     </div>
                 </div>
+                </div>
             </section>
             <section class="p-3 p-lg-5 d-column d-flex" id="pc">
-                <div class="col-6 pad-top-alittle">
+                <div class="mycol pad-top-alittle">
                     <h1>Program Committee</h1>
                     <ul>
                     <li>Fahad Khan (ILC-CNR, Pisa, Italy)</li>
